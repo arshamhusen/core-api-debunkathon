@@ -64,7 +64,7 @@ router.post("/check", async (req, res) => {
         },
       });
       res.status(200).send({
-        message: "Related articles found",
+        message: "Related articles Not found",
         article: articleExists,
         relatedArticles: relatedArticles,
         facts: facts,

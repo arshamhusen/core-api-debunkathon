@@ -15,6 +15,7 @@ router.put("/verify/:id", async (req, res) => {
       message: "Fact not found",
     });
   }
+
   const verifyFact = await Fact.update(
     {
       verified: true,
